@@ -27,16 +27,10 @@ public:
 	ChatBot(std::string filename); // constructor WITH memory allocation
 	~ChatBot();
 
-	//// STUDENT CODE
-	////
-
 	ChatBot(const ChatBot & src); // Copy consturctor
 	ChatBot& operator=(const ChatBot &src); // assignment constructor
 	ChatBot(ChatBot &&src); // Move constructor
 	ChatBot& operator=(ChatBot &&src); // Move assignment operator
-
-	////
-	//// EOF STUDENT CODE
 
 	// getters / setters
 	void SetCurrentNode(GraphNode *node);
